@@ -54,93 +54,91 @@ const Home = () => {
 
 
 
-            <div className='relative my-12 w-fit mx-auto'>
-      <div className='flex space-x-4'>
-        <div className='text-center'>
-          <div className='shadow-blue-200 shadow-[-5px_-10px_50px_-5px]'>
-            <img src={banner}  alt='Image 1' />
-
-          </div>
-          <p style={{ fontSize: '15px', fontFamily: 'Lilita One' }}>
-        Discover The Best Courses Tailored For{' '}
-        <span style={{ color: 'lightblue', textShadow: '1px 1px 2px rgba(0,0,0,0.5)', fontWeight: 'bold',fontSize: '18px' }}>
-            STUDENTS
-        </span>
-        , Designed To Enhance Your Learning Experience And Skill Development.
-    </p>
-        </div>
-        
-        <div className='text-center'>
-          <div className='shadow-blue-200 shadow-[-5px_-10px_50px_-5px]'>
-            <img src={banner2}  alt='Image 2' />
-          </div>
-          <p style={{ fontSize: '15px', fontFamily: 'Lilita One' }}>
-          Featuring World-Class {' '}
-        <span style={{ color: 'lightblue', textShadow: '1px 1px 2px rgba(0,0,0,0.5)', fontWeight: 'bold',fontSize: '18px' }}>
-            FACULTIES , 
-        </span>
-         With Extensive
-          Experience In-Depth Knowledge And Personalized One-on-One Support.
-    </p>
-        </div>
-        <div className='text-center'>
-          <div className='shadow-blue-200 shadow-[-5px_-10px_50px_-5px]'>
-            <img src={banner3}  alt='Image 3' />
-          </div>
-          <p style={{ fontSize: '15px', fontFamily: 'Lilita One' }}>
-          Empowering {' '}
-        <span style={{ color: 'lightblue', textShadow: '1px 1px 2px rgba(0,0,0,0.5)', fontWeight: 'bold',fontSize: '18px' }}>
-            WORKING PROFESSIONALS, 
-        </span>
-        With Advanced And New Skills Learning, Tailored To Thrive In Careers.
-    </p>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-            <div>
-                <CodeBlocks 
-                    position={"lg:flex-row"}
-                    heading = {
-                        <span>
-                            Unlock your <HighLightText message="Coding Genius "></HighLightText> with our innovative online courses.
+            <div className='relative my-12 mx-auto max-w-7xl'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10'>
+                {/* Image and Text Block 1 */}
+                <div className='text-center'>
+                    <div className='shadow-blue-200 shadow-md rounded-lg overflow-hidden'>
+                        <img src={banner} alt='Image 1' className='w-full h-auto' />
+                    </div>
+                    <p className='mt-4 text-sm md:text-base font-semibold text-gray-800'>
+                        Discover The Best Courses Tailored For{' '}
+                        <span className='text-lightblue font-bold'>
+                            STUDENTS
                         </span>
-                    }
-                    subheading={"Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."}
-                    btn1="Try it yourself " btn2 ="Learn more" 
-                    codeblock={`<!DOCTYPE html>\n<html>\n<head><title>Example</title>\n<linkrel="stylesheet"href="styles.css">\n</head>\n<body>\n<h1><a href="/">Header</a>\n</h1>\n<nav><ahref="one/">One</a><ahref="two/">Two</a><ahref="three/">Three</a>\n</nav>`}
-                    
-                    codecolor={"text-yellow-25"}
-                    link1={'/signup'}
-                    link2={'/login'}
-                    backgroundGradient={"gradient-yellow"}
-                    
-                />
+                        , Designed To Enhance Your Learning Experience And Skill Development.
+                    </p>
+                </div>
 
-                
-
-                <CodeBlocks 
-                    codeblock={`<!DOCTYPE html>\n<html>\n<head><title>Example</title>\n<linkrel="stylesheet"href="styles.css">\n</head>\n<body>\n<h1><a href="/">Header</a>\n</h1>\n<nav><ahref="one/">One</a><ahref="two/">Two</a><ahref="three/">Three</a>\n</nav>`}
-                    btn1={"Continue Lesson"}
-                    btn2={"Learn More"}
-                    heading={
-                        <span>
-                            Start <HighLightText message={"coding in seconds "}></HighLightText>
+                {/* Image and Text Block 2 */}
+                <div className='text-center mt-6 md:mt-0'>
+                    <div className='shadow-blue-200 shadow-md rounded-lg overflow-hidden'>
+                        <img src={banner2} alt='Image 2' className='w-full h-auto' />
+                    </div>
+                    <p className='mt-4 text-sm md:text-base font-semibold text-gray-800'>
+                        Featuring World-Class{' '}
+                        <span className='text-lightblue font-bold'>
+                            FACULTIES
                         </span>
-                    }
-                    subheading={"Go ahead, give it a try. Our hands-on learning environment means you'll be writing real code from your very first lesson."}
-                    codecolor={"text-richblack-5"}
-                    position={"lg:flex-row-reverse"}
-                    link1={'/login'}
-                    link2={'/signup'}
-                    backgroundGradient={"gradient-blue"}
-                />
+                        , With Extensive Experience In-Depth Knowledge And Personalized One-on-One Support.
+                    </p>
+                </div>
+
+                {/* Image and Text Block 3 */}
+                <div className='text-center mt-6 md:mt-0'>
+                    <div className='shadow-blue-200 shadow-md rounded-lg overflow-hidden'>
+                        <img src={banner3} alt='Image 3' className='w-full h-auto' />
+                    </div>
+                    <p className='mt-4 text-sm md:text-base font-semibold text-gray-800'>
+                        Empowering{' '}
+                        <span className='text-lightblue font-bold'>
+                            WORKING PROFESSIONALS
+                        </span>
+                        , With Advanced And New Skills Learning, Tailored To Thrive In Careers.
+                    </p>
+                </div>
             </div>
+        </div>
+
+
+
+
+
+
+        <div>
+            <CodeBlocks 
+                position={"lg:flex-row"}
+                heading={
+                    <span>
+                        Unlock your <HighLightText message="Coding Genius " /> with our innovative online courses.
+                    </span>
+                }
+                subheading={"Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."}
+                btn1="Try it yourself " 
+                btn2="Learn more" 
+                codeblock={`<!DOCTYPE html>\n<html>\n<head><title>Example</title>\n</head>\n<body>\n<h1><a href="/">Header</a>\n</h1>\n<nav><a href="one/">One</a><a href="two/">Two</a><a href="three/">Three</a>\n</nav>`}
+                codecolor={"text-yellow-25"}
+                link1={'/signup'}
+                link2={'/login'}
+                backgroundGradient={"gradient-yellow"}
+            />
+            <CodeBlocks 
+                codeblock={`<!DOCTYPE html>\n<html>\n<head><title>Example</title>\n</head>\n<body>\n<h1><a href="/">Header</a>\n</h1>\n<nav><a href="one/">One</a><a href="two/">Two</a><a href="three/">Three</a>\n</nav>`}
+                btn1="Continue Lesson"
+                btn2="Learn More"
+                heading={
+                    <span>
+                        Start <HighLightText message="coding in seconds " />
+                    </span>
+                }
+                subheading={"Go ahead, give it a try. Our hands-on learning environment means you'll be writing real code from your very first lesson."}
+                codecolor={"text-richblack-5"}
+                position={"lg:flex-row-reverse"}
+                link1={'/login'}
+                link2={'/signup'}
+                backgroundGradient={"gradient-blue"}
+            />
+        </div>
 
             
 
